@@ -1,0 +1,161 @@
+/* Global View Aka Desktop View  */
+body {
+  color: rgb(114, 87, 92);
+  background-color: #ebebeb;
+  margin: 0;
+}
+
+main {
+  margin: auto;
+}
+
+.cover {
+  width: auto;
+  height: 200px;
+  background-color: black;
+  background-image: url(images/car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  width: auto;
+  height: 55px;
+  background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(94, 94, 94));
+}
+
+.mybutton {
+  color: white;
+  padding: 18px 25px 19px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.mybutton:hover {
+  background-color: rgb(170, 170, 170);
+}
+
+.container {
+  width: 1500px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header {
+  border-bottom: 1px solid black;
+  width: 1200px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px, 20px 10px;
+  margin: 5px 20px 10px;
+}
+
+.fcontainer {
+  display: flex;
+}
+
+.logo {
+  margin: 5px 20px 5px 40px;
+  border-radius: 20px;
+  border: 5px solid #555;
+}
+
+figcaption {
+  margin-left: 45px;
+}
+
+p {
+  margin: 10px 30px 0px 30px;
+  font-size: 1.3rem;
+}
+
+footer {
+  padding-top: 10px;
+  width: auto;
+  height: 40px;
+  background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(94, 94, 94));
+  color: white;
+  text-align: center;
+}
+
+/* Mobile View should be 400px but 500px to test if it works */
+@media (max-width: 500px) {
+  main {
+    margin: auto;
+  }
+
+  .cover {
+    width: 500px;
+    height: 200px;
+    background-color: black;
+  }
+
+  nav {
+    width: 500px;
+    height: 55px;
+    background-image: linear-gradient(
+      to right,
+      rgb(27, 27, 27),
+      rgb(94, 94, 94)
+    );
+  }
+
+  .mybutton {
+    color: white;
+    padding: 18px 25px 19px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .mybutton:hover {
+    background-color: rgb(170, 170, 170);
+  }
+
+  .container {
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  header {
+    border-bottom: 1px solid black;
+    width: 400px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px, 20px 10px;
+    margin: 5px 20px 10px;
+  }
+
+  .fcontainer {
+    background-color: red;
+    width: 500px;
+    display: inline;
+  }
+
+  .logo {
+    margin: 5px 20px 5px 40px;
+    border-radius: 20px;
+    border: 5px solid #555;
+    width: 275px;
+    height: 200px;
+  }
+
+  p {
+    margin: 10px 30px 0px 30px;
+    font-size: 1.3rem;
+  }
+
+  footer {
+    padding-top: 10px;
+    width: auto;
+    height: 40px;
+    background-image: linear-gradient(
+      to right,
+      rgb(27, 27, 27),
+      rgb(94, 94, 94)
+    );
+    color: white;
+    text-align: center;
+  }
+}

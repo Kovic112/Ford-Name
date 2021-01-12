@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ford</title>
+    <link rel="stylesheet" href="Page3.css" />
+  </head>
+  <body>
+    <main>
+      <div class="cover"></div>
+
+      <nav>
+        <a href="Page1.html" class="mybutton">Home</a>
+        <a href="Page2.html" class="mybutton">News</a>
+        <a href="Page3.html" class="mybutton">Contact</a>
+        <a href="Page4.html" class="mybutton">About</a>
+        <a href="Page5.html" class="mybutton">Gallery</a>
+      </nav>
+
+      <div class="container">
+        <header>Contact</header>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1484.2114777987665!2d15.871532475183379!3d45.798022360077375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d1bb88350985%3A0x626e85ac7ce97aec!2sFord%20Hrvatska!5e0!3m2!1sen!2shr!4v1610047591744!5m2!1sen!2shr"
+          width="450"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+
+        <form action="mail.php" method="post">
+          <div class="inputitems">
+            <label for="name" class="newline">First Name*</label>
+            <input type="text" name="name" id="name" placeholder="First Name" />
+          </div>
+          <div class="inputitems">
+            <label for="name" class="newline">Last Name*</label>
+            <input type="text" name="name" id="name1" placeholder="Last Name" />
+          </div>
+          <div class="inputitems">
+            <label for="email" class="newline">Email*</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="inputitems">
+            <label for="email" class="newline">Country*</label>
+            <input list="country" name="country" class="newline" />
+            <datalist id="country">
+              <option value="Australia"></option>
+              <option value="Albania"></option>
+              <option value="Bosnia"></option>
+              <option value="Croatia"></option>
+              <option value="Serbia"></option>
+            </datalist>
+          </div>
+        </form>
+        <a href="Page1.html" class="submit">Submit</a>
+      </div>
+    </main>
+    <footer>
+      Copyright @ 2021 Jan Jergovic
+      <img
+        src="Images/githib.jpg"
+        alt="Picture of github"
+        width="17"
+        height="17"
+      />
+    </footer>
+  </body>
+</html>
